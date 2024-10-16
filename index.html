@@ -16,23 +16,24 @@
     }
 
     body {
-      background-color: #3a3a3a; /* Darker grey background */
-      color: #d1d1d1; /* Lighter grey text color */
-      font-size: 16px;
+      background-color: #f7f7f7; /* Very light grey background */
+      color: #444; /* Dark grey text color */
+      font-size: 16px; /* Small font size */
       line-height: 1.6;
       text-align: center; /* Centered all content */
       overflow-x: hidden;
     }
 
     header {
-      background-color: #222;
-      color: #fff;
+      background-color: #fff; /* White background for header */
+      color: #444; /* Dark grey text */
       padding: 20px;
       text-align: center;
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
     }
 
     header nav {
@@ -42,9 +43,10 @@
     }
 
     header nav a {
-      color: #fff;
+      color: #444;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
 
     section {
@@ -56,20 +58,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #444;
+      background-color: #f1f1f1; /* Very light grey */
     }
 
     .main-banner h2 {
-      font-size: 3.5rem;
-      color: #f2f2f2;
+      font-size: 3rem;
+      color: #333;
       text-align: center;
       max-width: 800px;
       font-style: italic;
-      font-weight: normal;
     }
 
     .intro {
-      background-color: #333;
+      background-color: #fff;
       text-align: center;
       padding: 50px 20px;
     }
@@ -77,15 +78,14 @@
     .intro h3 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #fff;
+      color: #444;
     }
 
     .intro p {
       max-width: 700px;
       margin: 0 auto;
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #e0e0e0; /* Lighter color for better readability */
+      font-size: 1rem;
+      color: #666;
     }
 
     .grid-container {
@@ -96,12 +96,12 @@
     }
 
     .grid-item {
-      background-color: #555;
-      color: #fff;
+      background-color: #fafafa; /* Light grey background for items */
+      color: #444;
       padding: 20px;
       text-align: center;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
 
@@ -111,11 +111,10 @@
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 20px;
-      filter: grayscale(100%);
     }
 
     .grid-item h4 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 10px;
       font-style: italic;
     }
@@ -130,10 +129,11 @@
     }
 
     footer {
-      background-color: #222;
-      color: #fff;
+      background-color: #fff;
+      color: #444;
       text-align: center;
       padding: 20px 0;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
     }
 
     footer p {
@@ -141,14 +141,14 @@
     }
 
     .artist-section {
-      background-color: #2d2d2d;
+      background-color: #f1f1f1;
       padding: 50px 20px;
       text-align: center;
     }
 
     .artist-section h3 {
       font-size: 2.5rem;
-      color: #f2f2f2;
+      color: #333;
       margin-bottom: 20px;
     }
 
@@ -157,7 +157,7 @@
       margin: 0 auto;
       font-size: 1.2rem;
       line-height: 1.8;
-      color: #ddd;
+      color: #666;
     }
 
     .menu-sections {
@@ -167,14 +167,14 @@
     .menu-sections h3 {
       font-size: 2rem;
       margin-bottom: 10px;
-      color: #fff;
+      color: #333;
     }
 
     .menu-sections p {
       max-width: 600px;
       margin: 0 auto 30px;
-      font-size: 1.1rem;
-      color: #ddd;
+      font-size: 1rem;
+      color: #666;
     }
   </style>
 </head>
@@ -191,10 +191,6 @@
     </nav>
   </header>
 
-  <section class="main-banner">
-    <h2>Exclusive Pre-Orders for Dark, Surreal Masterpieces</h2>
-  </section>
-
   <section id="work" class="menu-sections">
     <h3>Work</h3>
     <p>
@@ -207,32 +203,32 @@
     <p>
       Every day brings a new creation—small and haunting, yet striking in their detail. Anca’s daily sculptures tell a story of the forgotten, the shadowy, and the surreal. Sign up to receive updates and be the first to know when these unique pieces are available.
     </p>
+  </section>
 
-    <!-- Grid of Four Example Sculptures -->
-    <div class="grid-container">
-      <div class="grid-item">
-        <img src="./3OWyo2N.jpg" alt="Sculpture 1">
-        <h4>Sculpture 1: The Shadow's Whisper</h4>
-        <p>A small, eerie figure caught between the realms of the living and the dead.</p>
-      </div>
+  <!-- Grid of Four Example Sculptures -->
+  <section id="pictures" class="grid-container">
+    <div class="grid-item">
+      <img src="./3OWyo2N.jpg" alt="Sculpture 1">
+      <h4>Sculpture 1: The Shadow's Whisper</h4>
+      <p>A small, eerie figure caught between the realms of the living and the dead.</p>
+    </div>
 
-      <div class="grid-item">
-        <img src="./isgQDod.jpg" alt="Sculpture 2">
-        <h4>Sculpture 2: Forgotten Souls</h4>
-        <p>Crafted with meticulous detail, this figurine embodies the essence of lost spirits.</p>
-      </div>
+    <div class="grid-item">
+      <img src="./isgQDod.jpg" alt="Sculpture 2">
+      <h4>Sculpture 2: Forgotten Souls</h4>
+      <p>Crafted with meticulous detail, this figurine embodies the essence of lost spirits.</p>
+    </div>
 
-      <div class="grid-item">
-        <img src="./KILJJ4l.jpg" alt="Sculpture 3">
-        <h4>Sculpture 3: Wraith’s Embrace</h4>
-        <p>This sculpture captures the chilling embrace of a wraith in its haunting beauty.</p>
-      </div>
+    <div class="grid-item">
+      <img src="./KILJJ4l.jpg" alt="Sculpture 3">
+      <h4>Sculpture 3: Wraith’s Embrace</h4>
+      <p>This sculpture captures the chilling embrace of a wraith in its haunting beauty.</p>
+    </div>
 
-      <div class="grid-item">
-        <img src="./LQDddrI.jpg" alt="Sculpture 4">
-        <h4>Sculpture 4: Echoes of Darkness</h4>
-        <p>A delicate, otherworldly piece that echoes with the silence of the abyss.</p>
-      </div>
+    <div class="grid-item">
+      <img src="./LQDddrI.jpg" alt="Sculpture 4">
+      <h4>Sculpture 4: Echoes of Darkness</h4>
+      <p>A delicate, otherworldly piece that echoes with the silence of the abyss.</p>
     </div>
   </section>
 
@@ -257,7 +253,7 @@
   <section id="shop" class="menu-sections">
     <h3>Shop</h3>
     <p>
-      Explore the LunarCrypt collection. Limited edition macabre figurines are available for pre-order. Each piece is one-of-a-kind and designed for collectors who seek the eerie and unique.
+      Explore the collection of macabre figurines. Each piece is one-of-a-kind and crafted with precision for collectors who appreciate the dark and the mysterious.
     </p>
   </section>
 
