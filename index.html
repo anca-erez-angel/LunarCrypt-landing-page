@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LunarCrypt - Exclusive Macabre Figurines</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #e0e0e0;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #2d2d2d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      font-family: 'Georgia', serif;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 100px 20px 50px;
+    }
+
+    .main-banner {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c1c1c1;
+    }
+
+    .main-banner h2 {
+      font-size: 3.5rem;
+      color: #4b4b4b;
+      text-align: center;
+      max-width: 800px;
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .intro {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .intro h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2b2b2b;
+      font-family: 'Georgia', serif;
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 50px 0;
+    }
+
+    .grid-item {
+      background-color: #4d4d4d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      filter: grayscale(100%);
+    }
+
+    .grid-item h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    .grid-item p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LunarCrypt - Macabre Figurines</h1>
+  </header>
+
+  <section class="main-banner">
+    <h2>Exclusive Pre-Orders for Dark, Surreal Masterpieces</h2>
+  </section>
+
+  <section class="intro">
+    <h3>Welcome to LunarCrypt</h3>
+    <p>
+      Step into a world of eerie beauty with our exclusive pre-orders for meticulously crafted macabre figurines. Each piece is designed for collectors who appreciate the haunting and the surreal.
+    </p>
+  </section>
+
+  <section class="grid-container">
+    <div class="grid-item">
+      <img src="https://i.imgur.com/3OWyo2N.jpg" alt="Figurine 1">
+      <h4>The Dark Prophet</h4>
+      <p>A hand-sculpted figurine capturing the ominous gaze of a forgotten oracle.</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://i.imgur.com/isgQDod.jpg" alt="Figurine 2">
+      <h4>The Shrouded Soul</h4>
+      <p>Encased in mystery, this figurine evokes the shadowy realms of the afterlife.</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://i.imgur.com/KILJJ4l.jpg" alt="Figurine 3">
+      <h4>The Hollow King</h4>
+      <p>Residing in the void, the Hollow King is an ethereal sculpture of lost power.</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://i.imgur.com/LQDddrI.jpg" alt="Figurine 4">
+      <h4>The Eternal Watcher</h4>
+      <p>A gothic masterpiece representing the endless gaze of time itself.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 LunarCrypt. All rights reserved. Embrace the darkness.</p>
+  </footer>
+
+</body>
+</html>
