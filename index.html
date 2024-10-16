@@ -188,6 +188,49 @@
       font-size: 1rem;
       color: #666;
     }
+
+    /* Contact Form */
+    .contact-section {
+      background-color: #fff;
+      padding: 50px 20px;
+    }
+
+    .contact-section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact-form button:hover {
+      background-color: #666;
+    }
+
   </style>
 </head>
 <body>
@@ -248,8 +291,8 @@
 
     <div class="grid-item">
       <img src="./LQDddrI.jpg" alt="Sculpture 4">
-      <h4>Sculpture 4: Echoes of Darkness</h4>
-      <p>A delicate, otherworldly piece that echoes with the silence of the abyss.</p>
+      <h4>Sculpture 4: The Forgotten One</h4>
+      <p>Reaching into the darkness, this figurine beckons those who dare to look closer.</p>
     </div>
   </section>
 
@@ -258,11 +301,26 @@
   <section id="about" class="artist-section">
     <h3>About the Artist</h3>
     <p>
-      Hello! I’m Anca, an artist with a fascination for the dark and surreal. My work is inspired by the unknown and the eerie beauty hidden within shadows.
-      At the moment, I’m working on a series called **The Daily Sculptures**, where I create one small sculpture every day. These figurines are crafted to capture the haunting beauty of the forgotten and the otherworldly.
-      I sell my work through a waiting list. When you’re on it, you will receive an email every two months with the available sculptures. Join here to get access and be notified when the next series is released.
+      Hello! I’m Anca, a creator with a passion for dark, surreal artistry. My work explores the eerie and the uncanny through small, detailed sculptures. With every figurine, I invite you to experience the mystery and darkness that I hold dear.
     </p>
   </section>
+
+  <section class="separator"></section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact-section">
+    <h3>Contact</h3>
+    <div class="contact-form">
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="separator"></section>
 
   <footer>
     <p>&copy; 2024 LunarCrypt. All rights reserved. Embrace the darkness.</p>
